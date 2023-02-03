@@ -1,4 +1,4 @@
-<center><?php
+<?php
 session_start();
 
 // Connect to the database
@@ -12,7 +12,7 @@ $query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' ORDE
 $result = mysqli_query($con, $query);
 
 // Display the to-do list
-/*echo '<table>';
+echo '<table>';
 echo '<tr><th>Task</th><th>Date</th><th>Time</th><th>Status</th></tr>';
 while ($task = mysqli_fetch_assoc($result)) {
     echo '<tr>';
@@ -22,14 +22,14 @@ while ($task = mysqli_fetch_assoc($result)) {
     echo '<td>' . $task['status'] . '</td>';
     echo '</tr>';
 }
-echo '</table>';*/
+echo '</table>';
 
 // Display the form for creating new tasks
 echo '<form method="post">';
 echo '<input type="text" name="tname" placeholder="Task Name">';
 echo '<input type="date" name="date">';
 echo '<input type="time" name="time">';
-echo '<input type="submit" value="Add Task"><br><br>';
+echo '<input type="submit" value="Add Task">';
 echo '<a href="incomplete.php"><input type="button" value="Go to In-Complete Tasks Page"></a>';
 echo '</form>';
 
@@ -44,4 +44,4 @@ if (!empty($_POST['tname'])) {
     mysqli_query($con, $query);
 }
 
-?></center>
+?>

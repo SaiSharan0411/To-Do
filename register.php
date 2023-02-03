@@ -13,9 +13,7 @@
     $check_query = "SELECT * FROM user WHERE uname = '$uname'";
     $check_result = mysqli_query($con, $check_query);
     if(mysqli_num_rows($check_result) > 0) {
-      echo '<script type="text/javascript">
-       window.onload = function () { alert("Username already exists"); } 
-       </script>'; 
+      echo "Username already exists pls choose another username";
       exit();
     }
     //Insert the user into the database
