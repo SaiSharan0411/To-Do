@@ -1,4 +1,10 @@
-<center><?php
+<html>
+  <head>
+    <title>Tasks</title>
+    <link rel="stylesheet" type="text/css" href="page.css">
+  </head>
+<body><br><center>
+<?php
 session_start();
 $con = mysqli_connect("localhost","root","","todo");
 $uname = $_SESSION['uname'];
@@ -18,18 +24,18 @@ while ($task = mysqli_fetch_assoc($result)) {
     echo '<td>' . $task['time'] . '</td>';
     echo '<td>' . $task['status'] . '</td>';
     echo '<td>
-    <form action="" method="post">;
-    <input type="hidden" name="tname" value="' . $task['tname'] . '">;
-    <input type="submit" name="mark_complete" value="Mark as Complete">;
-    </form>;
+    <form action="" method="post">
+    <input type="hidden" name="tname" value="' . $task['tname'] . '">
+    <input type="submit" name="completed" value="Complete">
+    </form>
     </td>';
     echo '</tr>';
 }
     echo '<br><form method="post">';
-    echo '<a href="tasks.php"><input type="button" value="Go to Tasks List"></a>';
-    echo '<a href="today.php"><input type="button" value="Go to This Day Task List"></a>';
-    echo '<a href="month.php"><input type="button" value="Go to This Month Task List"></a>';
-    echo '<a href="complete.php"><input type="button" value="Go to Completed Tasks List"></a>';
+    echo '<a href="tasks.php"><input type="button" value="Home"></a>';
+    echo '<a href="today.php"><input type="button" value="Day"></a>';
+    echo '<a href="month.php"><input type="button" value="Month"></a>';
+    echo '<a href="complete.php"><input type="button" value="Completed"></a><br><br>';
     echo '</form>';
 echo '</table>';
 ?></center>
