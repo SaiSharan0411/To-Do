@@ -14,14 +14,14 @@ $uname = $_SESSION['uname'];
 $query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' ORDER BY date, time";
 $result = mysqli_query($con, $query);
 echo '<br><form method="post">';
-echo '<br><br><div><input type="text" name="tname" placeholder="Task Name">';
+echo '<br><div class="form-row"><div><input type="text" name="tname" placeholder="Task Name">';
 echo '<input type="date" name="date">';
 echo '<input type="time" name="time">';
-echo '<input type="submit" value="Add Task"></div><br><br>';
-echo '<div><a href="incomplete.php"><input type="button" value="In-Complete"></a>';
+echo '<input type="submit" value="Add Task"></div></div><br>';
+echo '<div class="button-row"><a href="incomplete.php"><input type="button" value="In-Complete"></a>';
 echo '<a href="today.php"><input type="button" value="Day"></a>';
 echo '<a href="month.php"><input type="button" value="Month"></a>';
-echo '<a href="complete.php"><input type="button" value="Completed"></a><br><br><br></div>';
+echo '<a href="complete.php"><input type="button" value="Completed"></a></div><br><br><br>';
 echo '</form>';
 if (!empty($_POST['tname'])) {
     $tname = $_POST['tname'];
