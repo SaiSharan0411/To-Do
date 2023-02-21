@@ -19,7 +19,7 @@ body {
 }
 
 input[type="submit"] {
-    width: 88%;
+    width: 90%;
     padding: 10px;
     font-size: 16px;
     background: linear-gradient(to right, #00b0ff, #0091ea);
