@@ -10,7 +10,13 @@ table {
     backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(11, 15, 13, 0.582);
     border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
+
+/*table td {
+    border: 1px solid rgb(105, 220, 255);
+}*/
 
 body {
     font-family: Arial;
@@ -19,7 +25,7 @@ body {
 }
 
 input[type="submit"] {
-    width: 90%;
+    width: 96%;
     padding: 10px;
     font-size: 16px;
     background: linear-gradient(to right, #00b0ff, #0091ea);
