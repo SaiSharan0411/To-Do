@@ -10,8 +10,9 @@
     $check_result = mysqli_query($con, $check_query);
     if(mysqli_num_rows($check_result) > 0) {
       echo '<script type="text/javascript">
-       window.onload = function () { alert("Username already exists"); } 
-       </script>'; 
+      alert("Username already exists");
+      window.location = "register.html";
+      </script>';
       exit();
     }
     $query = "INSERT INTO user (uname, password) VALUES ('$uname', '$password')";
