@@ -1,8 +1,8 @@
 <html>
-  <head>
-    <title>Tasks</title>
-    <link rel="stylesheet" type="text/css" href="pages.css">
-  </head>
+<head>
+<title>Tasks</title>
+<link rel="stylesheet" type="text/css" href="pages.css">
+</head>
 <body><br>
 <center><?php
 session_start();
