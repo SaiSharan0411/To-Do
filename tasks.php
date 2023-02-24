@@ -1,8 +1,8 @@
 <html>
-  <head>
-    <title>Tasks</title>
-    <link rel="stylesheet" type="text/css" href="taskspage.css">
-  </head>
+<head>
+<title>Tasks</title>
+<link rel="stylesheet" type="text/css" href="taskspage.css">
+</head>
 <body><br><center>
 <?php
 session_start();
@@ -24,11 +24,11 @@ echo '<a href="month.php"><input type="button" value="Month"></a>';
 echo '<a href="complete.php"><input type="button" value="Completed"></a></div><br><br><br>';
 echo '</form>';
 if (!empty($_POST['tname'])) {
-    $tname = $_POST['tname'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
-    $query = "INSERT INTO list (uname, tname, date, time) VALUES ('$uname', '$tname', '$date', '$time')";
-    mysqli_query($con, $query);
+$tname = $_POST['tname'];
+$date = $_POST['date'];
+$time = $_POST['time'];
+$query = "INSERT INTO list (uname, tname, date, time) VALUES ('$uname', '$tname', '$date', '$time')";
+mysqli_query($con, $query);
 }
 ?>
 </center></body>

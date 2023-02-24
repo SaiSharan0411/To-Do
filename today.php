@@ -1,17 +1,17 @@
 <html>
-  <head>
-    <title>Tasks</title>
-    <link rel="stylesheet" type="text/css" href="pages.css">
-  </head>
+<head>
+<title>Tasks</title>
+<link rel="stylesheet" type="text/css" href="pages.css">
+</head>
 <body><br>
 <center><?php
 session_start();
 $con = mysqli_connect("localhost","root","","todo");
 $uname = $_SESSION['uname'];
 if (isset($_POST['mark_complete'])) {
-    $tname = $_POST['tname'];
-    $query = "UPDATE list SET status='completed' WHERE uname='$uname' AND tname='$tname'";
-    mysqli_query($con, $query);
+$tname = $_POST['tname'];
+$query = "UPDATE list SET status='completed' WHERE uname='$uname' AND tname='$tname'";
+mysqli_query($con, $query);
 }
 $query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' AND date='CURDATE()' AND status = 'incomplete'";
 $result = mysqli_query($con, $query);
