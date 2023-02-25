@@ -1,0 +1,51 @@
+table{ 
+width: 40%; 
+padding: 10px; 
+font-size: 16px; 
+border-radius: 5px; 
+display: flex; 
+flex-direction: row; 
+justify-content: center; 
+align-items: center; 
+backdrop-filter: blur(16px) saturate(180%); 
+background-color: rgba(11,15,13,0.582); 
+border-radius: 12px; 
+border-collapse: separate; 
+border-spacing: 10px; 
+}
+/*table td,table th{ 
+border: 1px solid rgb(105,220,255); 
+}*/
+body{ 
+font-family: Arial; 
+background: linear-gradient(to right, #155799, #159957); 
+color: whitesmoke; 
+}
+input[type="submit"]{ 
+width: 96%; 
+padding: 10px; 
+font-size: 16px; 
+background: linear-gradient(to right, #00b0ff, #0091ea); 
+color: white; 
+border-radius: 5px; 
+border: none; 
+box-shadow: 1px 1px 5px #c0c0c0; 
+cursor: pointer; 
+} 
+input[type="submit"]:hover{ 
+background: linear-gradient(to right, #0091ea, #00b0ff); 
+} 
+input[type="button"]{ 
+margin-right: 14px; 
+padding: 10px; 
+font-size: 16px; 
+background: linear-gradient(to right, #00b0ff, #0091ea); 
+color: white; 
+border-radius: 5px; 
+border: none; 
+box-shadow: 1px 1px 5px #c0c0c0; 
+cursor: pointer; 
+}
+input[type="button"]:hover{ 
+background: linear-gradient(to right, #0091ea, #00b0ff); 
+}
