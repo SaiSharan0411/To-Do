@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Tasks</title>
-<link rel="stylesheet" type="text/css" href="pages.css">
+<link rel="stylesheet" type="text/css" href="page.css">
 </head>
 <body><br><center>
 <?php
