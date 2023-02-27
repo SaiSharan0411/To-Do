@@ -8,7 +8,7 @@
 session_start();
 $con = mysqli_connect("localhost","root","","todo");
 $uname = $_SESSION['uname'];
-if (isset($_POST['mark_incomplete'])) {
+if (isset($_POST['incompleted'])) {
 $tname = $_POST['tname'];
 $query = "UPDATE list SET status='incomplete' WHERE uname='$uname' AND tname='$tname'";
 mysqli_query($con, $query);
@@ -26,7 +26,7 @@ echo '<td>' . $task['status'] . '</td>';
 echo '<td>
 <form action="" method="post">
 <input type="hidden" name="tname" value="' . $task['tname'] . '">
-<input type="submit" name="incomplete" value="Incomplete">
+<input type="submit" name="incompleted" value="Incomplete">
 </form>
 </td>';
 echo '</tr>';

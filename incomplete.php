@@ -8,7 +8,7 @@
 session_start();
 $con = mysqli_connect("localhost","root","","todo");
 $uname = $_SESSION['uname'];
-if (isset($_POST['mark_complete'])) {
+if (isset($_POST['completed'])) {
 $tname = $_POST['tname'];
 $query = "UPDATE list SET status='completed' WHERE uname='$uname' AND tname='$tname'";
 mysqli_query($con, $query);
