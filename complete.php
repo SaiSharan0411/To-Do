@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Tasks</title>
+<title>Completed Tasks</title>
 <link rel="stylesheet" type="text/css" href="page.css">
 </head>
 <body><br>

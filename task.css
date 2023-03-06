@@ -46,6 +46,7 @@ input[type="submit"] {
 width: 20%;
 padding: 10px;
 font-size: 16px;
+margin-right: 14px;
 background: linear-gradient(to right, #00b0ff, #0091ea);
 color: white;
 border-radius: 5px;
@@ -78,5 +79,35 @@ box-shadow: 1px 1px 5px #c0c0c0;
 cursor: pointer;
 }
 input[type="button"]:hover {
+background: linear-gradient(to right, #0091ea, #00b0ff);
+}
+input[type="submit"][name="completed"] {
+width: 58%;
+padding: 10px;
+font-size: 16px;
+margin-right: 14px;
+background: linear-gradient(to right, #00b0ff, #0091ea);
+color: white;
+border-radius: 5px;
+border: none;
+box-shadow: 1px 1px 5px #c0c0c0;
+cursor: pointer;
+}
+input[type="submit"][name="completed"]:hover {
+background: linear-gradient(to right, #0091ea, #00b0ff);
+}
+input[type="submit"][name="user"] {
+width: 32%;
+padding: 10px;
+font-size: 16px;
+margin-right: 14px;
+background: linear-gradient(to right, #00b0ff, #0091ea);
+color: white;
+border-radius: 5px;
+border: none;
+box-shadow: 1px 1px 5px #c0c0c0;
+cursor: pointer;
+}
+input[type="submit"][name="user"]:hover {
 background: linear-gradient(to right, #0091ea, #00b0ff);
 }
