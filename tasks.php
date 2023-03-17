@@ -9,15 +9,17 @@ session_start();
 $con = mysqli_connect("localhost","root","","todo");
 $uname = $_SESSION['uname'];
 ?>
-<h1>Welcome to your To-Do List <?php echo $uname; ?></h1>
+<h1>Welcome to your To-Do List <?php echo $uname; ?></h1><br>
 <?php
 $query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' ORDER BY date, time";
 $result = mysqli_query($con, $query);
-echo '<br><form method="post"><br>';
+echo '<h2>Tasks Operations</h2>';
+echo '<form method="post"><br>';
 echo '<div class="button-row"><a href="addtask.php"><input type="button" value="Add Task"></a>';
 echo '<a href="status.php"><input type="button" value="Status"></a>';
 echo '<a href="login.html"><input type="button" value="Log-Out"></a></div><br>';
-echo '</form>';
+echo '</form><br>';
+echo '<h2>About Tasks</h2>';
 echo '<p>Our project main page is where you can manage all your tasks easily. 
 You can add new tasks, edit existing ones, or delete them if they are no longer needed. 
 You can also view your tasks in different filters, such as by date, week, month, year or status. 
