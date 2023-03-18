@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Tasks</title>
-<link rel="stylesheet" type="text/css" href="tasks.css">
+<link rel="stylesheet" type="text/css" href="tas.css">
 </head>
 <body><br><center>
 <?php
@@ -14,12 +14,7 @@ $uname = $_SESSION['uname'];
 echo '<h2>Tasks Operations</h2>';
 echo '<form method="post"><br>';
 echo '<div class="button-row"><a href="addtask.php"><input type="button" value="Add Task"></a>';
-echo '<select name="view" id="view">
-<option value="today">Today</option>
-<option value="week">Week</option>
-<option value="month">Month</option>
-<option value="year">Year</option>
-</select>';
+echo '<a href="view.php"><input type="button" value="View"></a>';
 echo '<a href="status.php"><input type="button" value="Status"></a>';
 echo '<a href="login.html"><input type="button" value="Log-Out"></a></div><br>';
 echo '</form><br>';
@@ -29,6 +24,7 @@ You can add new tasks, edit existing ones, or delete them if they are no longer 
 You can also view your tasks in different filters, such as by date, week, month, year or status. 
 This will help you keep track of your progress and stay organized. 
 My project main page is user-friendly and intuitive, so you can get started right away!</p>';
+$_SESSION['selected_item'] = isset($_GET['selected_item']) ? $_GET['selected_item'] : '';
 ?>
 </center></body>
 </html>
