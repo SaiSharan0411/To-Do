@@ -11,8 +11,6 @@ $uname = $_SESSION['uname'];
 ?>
 <h1>Welcome to your To-Do List <?php echo $uname; ?></h1><br>
 <?php
-$query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' ORDER BY date, time";
-$result = mysqli_query($con, $query);
 echo '<h2>Tasks Operations</h2>';
 echo '<form method="post"><br>';
 echo '<div class="button-row"><a href="addtask.php"><input type="button" value="Add Task"></a>';

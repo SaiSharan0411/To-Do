@@ -11,8 +11,6 @@ $uname = $_SESSION['uname'];
 ?>
 <h1>Add Tasks to your To-Do List <?php echo $uname; ?></h1>
 <?php
-$query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' ORDER BY date, time";
-$result = mysqli_query($con, $query);
 echo '<br><form method="post"><br>';
 echo '<a href="tasks.php"><input type="button" value="Home"></a>';
 echo '<br><div class="form-row"><div><input type="text" name="tname" placeholder="Task Name" required>';
