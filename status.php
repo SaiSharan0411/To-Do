@@ -37,10 +37,7 @@ echo '<td>
 </td>';
 echo '</tr>';
 }
-echo '</table>';
-?>
-<br>
-<?php
+echo '</table><br>';
 if (isset($_POST['incompleted'])) {
 $query = "UPDATE list SET status='incomplete' WHERE uname='$uname' AND tname='$tname'";
 mysqli_query($con, $query);
