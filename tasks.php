@@ -14,6 +14,12 @@ $uname = $_SESSION['uname'];
 echo '<h2>Tasks Operations</h2>';
 echo '<form method="post"><br>';
 echo '<div class="button-row"><a href="addtask.php"><input type="button" value="Add Task"></a>';
+echo '<select name="view" id="view">
+<option value="today">Today</option>
+<option value="week">Week</option>
+<option value="month">Month</option>
+<option value="year">Year</option>
+</select>';
 echo '<a href="status.php"><input type="button" value="Status"></a>';
 echo '<a href="login.html"><input type="button" value="Log-Out"></a></div><br>';
 echo '</form><br>';

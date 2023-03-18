@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stat.css">
+<link rel="stylesheet" type="text/css" href="statu.css">
 </head>
 <body><center><br>
 <?php
@@ -47,7 +47,7 @@ header("Location: status.php");
 $query = "SELECT tname, date, time, status FROM list WHERE uname = '$uname' AND status = 'completed' ORDER BY date, time";
 $result = mysqli_query($con, $query);
 echo '<table class="form-right">';
-echo '<h2>Completed Tasks</h2>';
+echo '<h2 class="h2">Completed Tasks</h2>';
 echo '<tr><th>Task</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr>';
 while ($task = mysqli_fetch_assoc($result)) {
 echo '<tr>';
