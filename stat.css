@@ -51,9 +51,14 @@ background: linear-gradient(to right, #0091ea, #00b0ff);
 }
 .form-left {
 float: left;
-width: 46%;
+width: 42%;
+margin-left: 5%;
 }
 .form-right {
 float: rightt;
 width: 42%;
+}
+.hl{
+text-align:left;
+padding-left: 17%;
 }
