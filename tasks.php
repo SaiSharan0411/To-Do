@@ -1,6 +1,5 @@
 <html>
 <head>
-<title>Tasks</title>
 <link rel="stylesheet" type="text/css" href="tas.css">
 </head>
 <body><br><center>
