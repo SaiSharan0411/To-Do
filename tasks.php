@@ -13,6 +13,7 @@ $uname = $_SESSION['uname'];
 echo '<h2>Tasks Operations</h2>';
 echo '<form method="post"><br>';
 echo '<div class="button-row"><a href="addtask.php"><input type="button" value="Add Task"></a>';
+echo '<a href="edit.php"><input type="button" value="Edit"></a>';
 echo '<a href="view.php"><input type="button" value="View"></a>';
 echo '<a href="status.php"><input type="button" value="Status"></a>';
 echo '<a href="login.html"><input type="button" value="Log-Out"></a></div><br>';
