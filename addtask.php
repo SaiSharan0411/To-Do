@@ -21,7 +21,7 @@ if (!empty($_POST['tname'])) {
 $tname = $_POST['tname'];
 $date = $_POST['date'];
 $time = $_POST['time'];
-$query = "INSERT INTO list (tname, date, time) VALUES ('$tname', '$date', '$time') WHERE uname='$uname'";
+$query = "INSERT INTO list (uname, tname, date, time) VALUES ('$uname', '$tname', '$date', '$time')";   
 mysqli_query($con, $query);
 }
 ?>
