@@ -6,7 +6,7 @@
 <center><br>
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","todo");
+$con = mysqli_connect("localhost","root","","to-do");
 $uname = $_SESSION['uname'];
 $view = isset($_POST['view']) ? $_POST['view'] : $_SESSION['selected_item'];
 $_SESSION['selected_item'] = $view;
