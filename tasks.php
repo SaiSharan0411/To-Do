@@ -5,7 +5,7 @@
 <body><br><center>
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","todo");
+$con = mysqli_connect("localhost","root","","to-do");
 $uname = $_SESSION['uname'];
 ?>
 <h1>Welcome to your To-Do List <?php echo $uname; ?></h1><br>

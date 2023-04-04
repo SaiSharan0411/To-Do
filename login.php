@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","todo");
+$con = mysqli_connect("localhost","root","","to-do");
 if(mysqli_connect_errno()) 
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 if(isset($_POST['uname']) && isset($_POST['password'])) 

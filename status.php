@@ -5,7 +5,7 @@
 <body><center><br>
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","todo");
+$con = mysqli_connect("localhost","root","","to-do");
 $uname = $_SESSION['uname'];
 ?>
 <h1>Your Tasks Status <?php echo $uname; ?></h1>
