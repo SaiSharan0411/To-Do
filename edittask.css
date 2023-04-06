@@ -1,0 +1,73 @@
+label {
+display: block;
+margin-bottom: 10px;
+font-size: 16px;
+}
+input[type="text"] {
+width: calc(33.33% - 14px);
+}
+input[type="date"], input[type="time"] {
+width: calc(33.33% - 18px);
+}
+input[type="text"], input[type="date"], input[type="time"] {
+margin: 0 5px 20px;
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border: none;
+box-shadow: 1px 1px 5px #81c9ff;
+}
+body {
+font-family: Arial;
+background: linear-gradient(to right, #155799, #159957);
+color: whitesmoke;
+}
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 46%;
+margin: auto;
+color: whitesmoke;
+backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(11, 15, 13, 0.582);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
+select {
+padding: 10px;
+font-size: 16px;
+margin-right: 4px;
+border-radius: 6px;
+border: none;
+box-shadow: 1px 1px 5px #00b0ff;
+}
+input[type="submit"] {
+width: 20%;
+padding: 10px;
+font-size: 16px;
+margin-right: 14px;
+background: linear-gradient(to right, #00b0ff, #0091ea);
+color: white;
+border-radius: 5px;
+border: none;
+box-shadow: 1px 1px 5px #c0c0c0;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background: linear-gradient(to right, #0091ea, #00b0ff);
+}
+input[type="button"]{ 
+padding: 8px; 
+font-size: 16px; 
+background: linear-gradient(to right, #00b0ff, #0091ea); 
+color: white; 
+border-radius: 5px; 
+border: none; 
+box-shadow: 1px 1px 5px #c0c0c0; 
+cursor: pointer; 
+}
+input[type="button"]:hover{ 
+background: linear-gradient(to right, #0091ea, #00b0ff); 
+}

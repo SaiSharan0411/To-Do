@@ -49,3 +49,21 @@ cursor: pointer;
 input[type="button"]:hover{ 
 background: linear-gradient(to right, #0091ea, #00b0ff); 
 }
+.form-left {
+float: left;
+width: 42%;
+margin-left: 5%;
+}
+.form-right {
+float: rightt;
+width: 42%;
+}
+.hl{
+text-align:left;
+padding-left: 17%;
+}
+.h2{
+text-align:right;
+padding-right: 18%;
+margin-top: -4%;
+}

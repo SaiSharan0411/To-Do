@@ -1,0 +1,50 @@
+body {
+font-family: Arial;
+background: linear-gradient(to right, #155799, #159957);
+color: whitesmoke;
+}
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 38%;
+margin: auto;
+color: whitesmoke;
+backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(11, 15, 13, 0.582);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.button-row {
+display: flex;
+justify-content: space-evenly;
+width: 80%;
+margin: auto;
+}
+input[type="button"] {
+width: 96%;
+margin-right: 14px;
+padding:10px;
+font-size: 16px;
+background: linear-gradient(to right, #00b0ff, #0091ea);
+color: white;
+border-radius: 5px;
+border: none;
+box-shadow: 1px 1px 5px #c0c0c0;
+cursor: pointer;
+}
+input[type="button"]:hover {
+background: linear-gradient(to right, #0091ea, #00b0ff);
+}
+p {
+font-family: Arial, sans-serif;
+font-size: 18px;
+color: white;
+width: 60%;
+background-color: rgba(11, 15, 13, 0.582);
+padding: 40px;
+background-color: rgba(11, 15, 13, 0.582);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
